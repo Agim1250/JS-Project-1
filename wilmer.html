@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PROJECT</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="wilmer.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="navigation">
+    <nav>
+      <div>
+        <div class="barn flex">
+          <h2>WILMER ACADEMY</h2>
+          <img src="./imgs/images.jpg" alt="">
+        </div>
+        <p>A FAMILY OF LEARNING AND PRODUCTIVITY....</p>
+      </div>
+    </nav>
+  </div>
+  <div class="barn2">
+    <div class="mud">
+      <h4>LOOKING FOR SCHOLARSHIPS?</h4>
+      <img src="./imgs/imaa.jpeg" alt="">
+    </div>
+  </div>
+  <div class="every">
+    <div class="row2 ">
+      <form id="Form">
+        <h1>SCHOLARSHIP APPLICATION</h1>
+        <p>Please fill out this form correctly.</p>
+        <div class="all">
+          <label for="firstName">Firstname:</label>
+          <div><input type="text" id="firstName" placeholder="Firstname" ></div>
+          <p id="firstNameErr"></p>
+
+          <label for="lastName">Lastname:</label>
+          <div><input type="text" id="lastName" placeholder="Lastname" ></div>
+          <p id="lastNameErr"></p>
+
+          <label for="age">Age:</label>
+          <div><input type="number" id="age" placeholder="Age" ></div>
+          <p id="ageErr"></p>
+
+          <label for="gender">Gender:</label>
+          <div><select id="gender" placeholder="Gender" >
+            <option value="select">select gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select></div>
+            <p id="genderErr"></p>
+
+          <label for="phone">Phone-number:</label>
+            <div><input type="tel" id="phone" placeholder="Phone-number" required></div>
+            <p id="phoneErr"></p>
+
+          <label for="school">School:</label>
+          <div><input type="text" id="school" placeholder="School"  autocomplete=""></div>
+          <p id="schoolErr"></p>
+
+          <label for="country">Country:</label>
+          <div><select name="" id="country">
+            <option value="selected">choose region</option>
+            <option value="nigeria">Nigeria</option>
+            <option value="cameroon">Cameroon</option>
+            <option value="congo">Congo</option>
+            <option value="fiji">Fiji</option>
+            <option value="sweden">Sweden</option>
+            <option value="u.s.a">U.S.A</option>
+            <option value="united kingdom">United kingdom</option>
+            <option value="argentina">Argentina</option>
+            <option value="portugal">Portugal</option>
+            <option value="china">China</option>
+            <option value="iran">Iran</option>
+            <option value="u.a.e">U.A.E</option>
+            <option value="tunisia">Tunisia</option>
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="brazil">Brazil</option>
+            <option value="costa rica">Costa rica</option>
+            <option value="tonga">Tonga</option>
+            <option value="kosovo">Kosovo</option>
+            <option value="latvia">Latvia</option>
+            <option value="spain">Spain</option>
+            <option value="south africa">South africa</option>
+            <option value="venezuela">Venezuela</option>
+            <option value="cuba">Cuba</option>
+            <option value="brazil">Brazil</option>
+            <option value="tuvalu">Tuvalu</option>
+            <option value="poland">Poland</option>
+            <option value="malta">Malta</option>
+            <option value="japan">Japan</option>
+            <option value="afghanistan">Afghanistan</option>
+          </select></div>
+          <p id="countryErr"></p>
+
+          <form id="ink">
+            <div class="pain flex">
+              
+              <select name="subject1" class="subject1" required>
+                <option value="please">select a subject</option>
+                <option value="english">English</option>
+                <option value="mathematics">Mathematics</option>
+                <option value="biology">Biology</option>
+                <option value="chemistry">Chemistry</option>
+                <option value="geography">Geography</option>
+                <option value="civic education">Civic Education</option>
+                <option value="economics">Economics</option>
+                <option value="computer studies">Computer Studies</option>
+                <option value="physics">Physics</option>
+              </select>
+              <input type="number" id="subject1-score"  min="0" max="100">
+            </div>
+            <div class="pain flex">
+              
+              <select name="subject1" class="subject1"  required>
+                <option value="please">select a subject</option>
+                <option value="mathematics">Mathematics</option>
+                <option value="english">English</option>
+                <option value="biology">Biology</option>
+                <option value="chemistry">Chemistry</option>
+                <option value="geography">Geography</option>
+                <option value="civic education">Civic Education</option>
+                <option value="economics">Economics</option>
+                <option value="computer studies">Computer Studies</option>
+                <option value="physics">Physics</option>
+              </select>
+              <input type="number" id="subject2-score"  min="0" max="100">
+            </div>
+            <div class="pain flex">
+              <select name="subject1" class="subject1">
+                <option value="please">select a subject</option>
+                <option value="biology">Biology</option>
+                <option value="mathematics">Mathematics</option>
+                <option value="english">English</option>
+                <option value="chemistry">Chemistry</option>
+                <option value="geography">Geography</option>
+                <option value="civic education">Civic Education</option>
+                <option value="economics">Economics</option>
+                <option value="computer studies">Computer Studies</option>
+                <option value="physics">Physics</option>
+              </select>
+              <input type="number" id="subject3-score"  min="0" max="100">
+            </div>
+            <div class="pain flex">
+              <select name="subject1" class="subject1">
+                <option value="please">select a subject</option>
+                <option value="biology">Biology</option>
+                <option value="mathematics">Mathematics</option>
+                <option value="english">English</option>
+                <option value="chemistry">Chemistry</option>
+                <option value="geography">Geography</option>
+                <option value="civic education">Civic Education</option>
+                <option value="economics">Economics</option>
+                <option value="computer studies">Computer Studies</option>
+                <option value="physics">Physics</option>
+              </select>
+              <input type="number" id="subject4-score"  min="0" max="100">
+            </div>
+            <div class="pain flex">
+              <select name="subject1" class="subject1">
+                <option value="please">select a subject</option>
+                <option value="geography">Geography</option>
+                <option value="biology">Biology</option>
+                <option value="mathematics">Mathematics</option>
+                <option value="english">English</option>
+                <option value="chemistry">Chemistry</option>
+                <option value="civic education">Civic Education</option>
+                <option value="economics">Economics</option>
+                <option value="computer studies">Computer Studies</option>
+                <option value="physics">Physics</option>
+              </select>
+              <input type="number" id="subject5-score"  min="0" max="100">
+            </div>
+            <div class="pain flex">
+              <select name="subject1" class="subject1">
+                <option value="please">select a subject</option>
+                <option value="physics">Physics</option>
+                <option value="geography">Geography</option>
+                <option value="biology">Biology</option>
+                <option value="mathematics">Mathematics</option>
+                <option value="english">English</option>
+                <option value="chemistry">Chemistry</option>
+                <option value="civic education">Civic Education</option>
+                <option value="economics">Economics</option>
+                <option value="computer studies">Computer Studies</option>
+              </select>
+              <input type="number" id="subject6-score"  min="0" max="100">
+            </div>
+            <div class="pain flex">
+              <select name="subject1" class="subject1">
+                <option value="please">select a subject</option>
+                <option value="physics">Physics</option>
+                <option value="geography">Geography</option>
+                <option value="biology">Biology</option>
+                <option value="mathematics">Mathematics</option>
+                <option value="english">English</option>
+                <option value="chemistry">Chemistry</option>
+                <option value="civic education">Civic Education</option>
+                <option value="economics">Economics</option>
+                <option value="computer studies">Computer Studies</option>
+              </select>
+              <input type="number" id="subject7-score"  min="0" max="100">
+            </div>
+            <div class="pain flex">
+              <select name="subject1" class="subject1">
+                <option value="please">select a subject</option>
+                <option value="physics">Physics</option>
+                <option value="geography">Geography</option>
+                <option value="biology">Biology</option>
+                <option value="mathematics">Mathematics</option>
+                <option value="english">English</option>
+                <option value="chemistry">Chemistry</option>
+                <option value="civic education">Civic Education</option>
+                <option value="economics">Economics</option>
+                <option value="computer studies">Computer Studies</option>
+              </select>
+              <input type="number" id="subject8-score" min="0" max="100">
+            </div>
+            <p id="subjectErr"></p>
+          <button id="button" onclick="checkEligibility()">CHECK ELIGIBILITY</button>
+          <!-- <button type="button" id="buttons">RESET</button> -->
+      </form>
+      <div id="result">
+        
+      </div>
+    </div>
+    <div class="row4">
+      <h2>SCHOLARSHIP APPLICATION INSTRUCTIONS</h2>
+      <hr>
+      <hr class="line">
+      <p>The scholarship application period is now open. The next scholarship application cycle will last
+        until September 2023 for the courses starting in 2024.
+      </p>
+      <p>Wilmer Academy-administered scholarships are available for Wilmer campuses nationwide.</p>
+      <ul>
+        <li>Applicants are considered for all available scholarships</li>
+        <li>Wilmer Academy previous scholarship award recipients are only eligible for one scholarship award per year
+        </li>
+        <li>All applications are submitted through the Wilmer Academy “online” scholarship portal</li>
+        <li>Applications are accepted ONLY during the application period</li>
+      </ul>
+      <p>The number of scholarships awarded, as well as the benefits of each award, will vary by the number of qualified
+        applicants received.</p>
+    </div>
+
+  </div>
+  <div class="row5">
+      <h2>ELIGIBILITY</h2>
+      <hr>
+      <hr class="line">
+      <p>AFRICAN CITIZENS and WEST AFRICA PERMANENT RESIDENTS</p>
+      <p>Wilmer Academy-administered scholarships are available for Wilmer campuses nationwide.</p>
+      <ul>
+        <li>On-Campus programs at the Calabar or Cape Town Campuses only</li>
+        <li>Gemology Lab Classes at the Lagos or Dakar Campuses only</li>
+        <li>Online Courses</li>
+        <li>Eligible for a wide Age range</li>
+      </ul>
+
+      <h2>HOW TO APPLY - ONLINE ONLY</h2>
+      <hr>
+      <hr class="line">
+    
+      <ul>
+        <li>Wilmer Academy scholarship application form is available only during the open application period.</li>
+        <li>Required documents if any must be in Word, pdf or jpeg format (rtf, odt, txt, msg documents, zip
+           folders are NOT acceptable).</li>
+        <li>Complete only one online scholarship application form, answer all questions and attach required documents if any.</li>
+        <li>Applicant must indicate below a program of study and the method of study (on-campus, lab class, or online courses).</li>
+        <li>All applicants not chosen for a scholarship, or those who decline a scholarship, are encouraged to apply again.</li>
+      </ul>
+
+      <div>
+      
+        <input type="radio" name="classes" value="On-campus" id="on-campus">
+        <label for="on-campus">On-campus</label><br>
+        <input type="radio"  name="classes"  value="Lab classes" id="lab-class">
+        <label for="lab-class">Lab classes</label><br>
+        <input type="radio" name="classes"  value="Online courses" id="online course">
+        <label for="online course">Online courses</label>
+      </div>
+    </div>
+    
+    
+    
+    </form>
+  
+
+  <div class="container">
+    <canvas id="myChart"></canvas>
+  </div>
+  <script src="wilmer.js"></script>
+</body>
+
+</html>
